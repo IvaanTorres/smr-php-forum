@@ -15,4 +15,4 @@ Once you logged in, you can surf the whole website. You can solve your doubts by
 Emphasize you can't create comments in case you are not logged.
 The website is responsive and has cheks in every form.
 
-As it is just a personal project and I want to share it to you, I decided to remove the mail user and password I normally use to use PHP-Mailer. You are free to download the project and set it with your own data.
+As it is just a personal project and I want to share it to you, I decided to remove the mail user and password I normally use to use PHP-Mailer. You are free to download the project and set it up with your own data.
