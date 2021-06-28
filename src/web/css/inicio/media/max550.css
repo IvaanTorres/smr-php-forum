@@ -1,0 +1,8 @@
+@media (max-width: 550px){
+	.frase p{
+		text-align: justify;
+	}
+	.actividades{
+		display: none;
+	}
+}

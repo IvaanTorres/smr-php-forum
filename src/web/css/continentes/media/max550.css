@@ -1,0 +1,25 @@
+@media (max-width: 550px) {
+	header{
+		display: none;
+	}
+	.frase p{
+		display: none;
+	}
+	.frase{
+		padding: 100px 0px 20px 0px;
+		height: auto;
+	}	
+	.frase h2{
+		font-family: 'Lobster', sans-serif;
+		text-align: center;
+		font-size: 60px;
+	}
+	.hola, .hola2{
+		width: 100%;
+	}
+	.marco div div{
+		height: 300px;
+		width: 90%;
+		margin-bottom: 10px;
+	}
+}

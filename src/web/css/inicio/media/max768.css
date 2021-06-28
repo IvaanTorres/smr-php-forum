@@ -1,0 +1,76 @@
+@media (max-width: 820px) {
+	.inicio{
+		width: 100%;
+		background-color: #a1cd84;
+		margin-top: 40px;
+	}
+	.inicio h1{
+		font-size: 60px;
+		text-align: center;
+	}
+	.inicio p{
+		text-align: justify;
+	}
+	.inicio div{
+		margin: 0px;
+	}
+	#uno{
+		display: none;
+	}
+	#tres{
+		display: none;
+	}
+	.foto{
+		display: none;
+	}
+	.navmovil{
+		display: block;
+	}
+	nav{
+		background-color: rgba(52,52,52,0.3);
+		width: 100%;
+	}
+	.navbarmovil div{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.navmovil ul{
+		z-index: 100;
+		width: 100%;
+		background-color: rgba(52,52,52);
+		position: fixed;
+		top: 0;
+		right: 0;
+	    list-style: none;
+	    display: flex;
+	    justify-content: flex-start;
+	}
+	.navmovil ul li{
+		padding: 10px;
+	}
+	.navmovil ul a{
+		text-decoration: none;
+		font-family: calibri;
+	    color: #fff;
+	    font-weight: bold;
+	    border-bottom: 3px solid rgba(0,0,0,0);
+	}
+	.navmovil ul a:hover{
+		background-color: #535353;
+	}
+	.navpc, .navprimeromovil{
+		display: none;
+	}
+	.fa-bars{
+		font-size: 30px;
+	}
+	.frase h2{
+		padding-top: 20px; 
+	}
+}
+@media (max-width: 520px) and (max-height: 800px) {
+	#menumovil .social{
+		font-size: 14px;
+	}
+}

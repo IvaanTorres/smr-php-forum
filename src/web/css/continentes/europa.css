@@ -1,0 +1,383 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: calibri;
+	scroll-behavior: smooth;
+}
+/*BARRA DE NAVEGACIÓN*/
+/*PARAMETROS GENERALES*/
+nav ul{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+}
+nav ul a{
+	text-decoration: none;
+}
+/*PRIMER NIVEL*/
+nav > ul{
+	background-color: #333;
+	display: table;
+	width: 100%;
+}
+nav ul li{
+	line-height: 55px;
+}
+nav ul li a{
+	color: #fff;
+	padding: 0 20px;
+	display: block;
+}
+nav ul li a:hover{
+	background-color: grey;
+}
+nav > ul > li{
+	float: left;
+}
+nav ul li:hover ul{
+	display: block;
+}
+#movilbar .fa-bars{
+	line-height: 55px;
+	padding: 0 15px;
+	color: #fff;
+	font-size: 35px;
+}
+#menumovil{
+	height: 100vh;
+	width: 70%;
+	z-index: 1000;
+	background-color: #333;
+	color: #fff;
+	font-family: 'Lobster', cursive;
+	position: fixed;
+	top: 0;
+	display:none;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+#menumovil::-webkit-scrollbar{
+	display: none;
+}
+#menumovil h2{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 50px;
+}
+#menumovil ul ul{
+	display: none;
+	margin: 0px;
+	background-color: #555;
+}
+#menumovil ul ul li{
+	text-align: right;
+}
+#menumovil ul{
+	margin-top: 30px;
+	margin-bottom: 200px;
+}
+#menumovil ul li a{
+	font-family: 'Lobster', cursive;
+	display: block;
+	padding: 15px;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+}
+#menumovil ul li a:hover{
+	padding: 15px 25px;
+}
+#menumovil .cajasocial{
+	display: flex;
+	width: 100%;
+	justify-content: center;	
+}
+#menumovil .social{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;	
+}
+#menumovil .social a{
+	color: #fff;	
+}
+#menumovil .social a i:hover{
+	animation: rotar 2s infinite;	
+}
+@keyframes rotar{
+	0% {transform: rotate(0deg);}
+	20% {transform: rotate(10deg);}
+	40% {transform: rotate(-10deg);}
+	60% {transform: rotate(10deg);}
+	80% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+#menumovilcontinentes{
+	cursor: pointer;
+}
+/*SEGUNDO NIVEL*/
+nav ul ul{
+	position: absolute;
+	top: 100%;
+	width: 118px;
+	text-align: center;
+	background-color: #444;
+	display: none;
+}
+header{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 65vh;
+	overflow: hidden;
+	background-color: #93c572;
+}
+header .overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 65vh;
+	background-color: #fff;
+	opacity: 0.3;
+}
+header .titulo{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .titulo h1{
+	font-family: 'Lobster', sans-serif;
+	font-size: 70px;
+	color: #fff;
+	width: 100%;
+	background-color: #525252;
+	text-align: center;
+}
+header ul{
+	padding: 0;
+	width: 260%;
+	animation: cambio 20s infinite alternate linear;
+}
+header li{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+header img{
+	margin-bottom: -4.6px;
+	width: 100vw;
+	height: 65vh;
+}
+@keyframes cambio{
+	0% {margin-top: 0px;}
+	5% {margin-top: 0px;}
+	
+	95% {margin-top: -260vh;}
+	100% {margin-top: -260vh;}
+}
+.frase{
+	background-color: #525252;
+	color: #fff;
+	width: 100%;
+	height: 35vh;
+	padding: 40px;
+	padding-bottom: 20px;
+}
+.frase h2{
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.paises{
+	width: 100%;
+	background-color: #93c572;
+	padding-bottom: 0px;
+}
+.paises h2{
+	font-size: 40px;
+	text-align: center;
+	padding: 20px 0px 40px 0px;
+}
+.paises div div{
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 90%;
+	background-color: #fff;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 20px;
+}
+.paises div div div{
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 10px 0px 10px;
+	width: 150px;
+
+}
+.paises div div div div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.paises div div div div a{
+	font-weight: bold;
+	color: #535353;
+	text-decoration: none;
+	width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 20px 10px 20px 20px;
+}
+.paises div div div div a:hover{
+	background-color: #b4d79d;
+}
+.texto{
+	padding-top: 40px;
+	height: 300px;
+	padding: 50px;
+}
+#textopais{
+	text-align: center;
+	margin-top: 40px;
+}
+#titulopais{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Lobster', sans-serif;
+}
+.marco{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 75px;
+	margin-bottom: 45px;
+}
+.marco div{
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+}
+.marco div div{
+	float: right;
+	width: 400px;
+	height: 400px;
+	background-color: orange;
+}
+
+/*FOOTER DE LA PÁGINA DE INICIO*/
+
+footer{
+	width: 100%;
+	background-color: #525252;
+}
+footer .contenidofooter{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+footer .contactosfooter{
+	padding: 30px;
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+footer .contactosfooter h2{
+	font-size: 25px;
+	font-family: 'Lobster', sans-serif;
+	color: #fff;
+	margin-bottom: 60px;
+	text-align: center;
+}
+footer .contactosfooter ul{
+	line-height: 25px;
+	color: #fff;
+	margin-left: 50px;
+}
+footer .contactosfooter ul a{
+	text-decoration-color: #93c572;
+	line-height: 25px;
+	color: #fff;
+}
+footer .apartadosfooter{
+	padding: 30px;
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+footer .apartadosfooter h2{
+	font-size: 25px;
+	font-family: 'Lobster', sans-serif;
+	color: #fff;
+	margin-bottom: 60px;
+	text-align: center;
+}
+footer .apartadosfooter ul{
+	color: #fff;
+	line-height: 25px;
+	margin-left: 50px;
+}
+footer .apartadosfooter ul li a{
+	color: #fff;
+	text-decoration-color: #93c572;
+}
+footer .iconos{
+	width: 400px;
+	height: 100px;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 70px;
+}
+footer .iconos div{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .iconos div div a{
+	margin-right: 30px;
+	color: #fff;
+	transition: 0.6s;
+}
+footer .iconos div div a:hover{
+	color: #93c572;
+}
+footer .fa-twitter-square{
+	margin-right: -30px;
+}
+footer .mapaiconos .mapafooter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .mapa{
+	width: 100%;
+	height: 250px;
+	margin-bottom: 30px;
+}
+footer .copy{
+	clear: both;
+	padding: 20px;
+	background-color: #93c572;
+	font-weight: bold;
+}

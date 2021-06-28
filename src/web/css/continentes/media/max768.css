@@ -1,0 +1,67 @@
+@media (max-width: 820px) and (max-height: 3068px){
+	header{
+	height: 100vh;
+	}
+	@keyframes cambio{
+		0% {margin-top: 0px;}
+		5% {margin-top: 0px;}
+		
+		95% {margin-top: -400vh;}
+		100% {margin-top: -400vh;}
+	}
+	header .overlay{
+		height: 100vh;
+	}
+	header .titulo{
+		height: 100vh;
+	}
+	header .titulo h1{
+		text-align: center;
+		background-color: #525252;
+		width: 100%;
+		color: #fff;
+	}
+	header img{
+		height: 100vh;
+	}
+	.frase p{
+		display: none;
+	}
+	.marco div div{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 520px) and (max-height: 800px) {
+	#menumovil .social{
+		font-size: 14px;
+	}
+}
+@media (max-width: 820px){
+	nav > ul > li{
+		display: none;
+	}
+	#menumovil h2{
+		font-size: 30px;
+	}
+	#movilbar{
+		position: fixed;
+		top: 0;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		background-color: #333;
+	}
+	.fa-bars{
+		cursor: pointer;
+		color: #fff;
+		padding: 0 20px;
+		font-size: 30px;
+		line-height: 2.5rem;
+	}
+	.fa-bars:hover{
+		background-color: #666;
+	}
+	.texto{
+		display: none;
+	}
+}

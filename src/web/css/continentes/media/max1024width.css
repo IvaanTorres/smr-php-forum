@@ -1,0 +1,8 @@
+@media (max-width: 1024px) {
+	.titulo h1{
+		width: 100%;
+		background-color: #525252;
+		color: #fff;
+		text-align: center;
+	}
+}

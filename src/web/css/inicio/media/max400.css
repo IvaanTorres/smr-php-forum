@@ -1,0 +1,37 @@
+@media (max-width: 400px) {
+	.mensaje .titulomensaje h2{
+		margin-bottom: -30px;
+	}
+	form{
+		width: 100%;
+	}
+	form .flexform{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	form .flexform .contenidoform{
+		width: 75%;
+	}
+	footer .contenidofooter div{
+		margin-top: 20px;
+		height: 250px;
+	}
+	form .flexform .contenidoform input, textarea{
+		width: 100%;
+	}
+	textarea{
+		width: 100%;
+	}
+	footer .iconos{
+		margin-bottom: -30px;
+	}
+	footer .iconos div{
+		margin-top: -30px;
+	}
+	footer .copy{
+	text-align: center;
+	}
+}
