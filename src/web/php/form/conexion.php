@@ -2,7 +2,7 @@
 
 $host="localhost";
 $user="root";
-$pass="";
+$pass="2002";
 $db="foro";
 
 ?>

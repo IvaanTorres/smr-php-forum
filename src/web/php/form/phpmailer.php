@@ -13,7 +13,7 @@
 	/* Open the try/catch block. */
 	try {
 		/* Set the mail sender. */
-		$mail->setFrom('MAIL WHICH SENDS THE EMAIL', 'TITLE');
+		$mail->setFrom('MAIL WHICH SENDS THE EMAIL', 'TITLE'); //! IMPORTANT
 
 		/* Add a recipient. */
 		$mail->addAddress($correo, $nick);
@@ -23,7 +23,7 @@
 
 		$mail->Subject = 'Verificar correo - TravelEarth Exploring';
 
-		/* Set the mail message body. */
+		/* Set the mail message body. */ //! IMPORTANT - SET THE CORRECT PC IP TO GET IN FROM THE MOBILE
 		$mail->Body = "
 		<h1>Bienvenid@ ".$nick."</h1>
 		</br>
@@ -31,7 +31,7 @@
 		<p>Por favor, no conteste.</p>
 		</br>
 		<p>Para confirmar su correo pulse el siguiente boton:</p>
-		<button><a href='http://192.168.0.111/travelEarthPRUEBA/src/web/php/form/registroConfirmado.php?IdEmail=$correo'>Verificar correo</a></button>
+		<button><a href='http://192.168.0.111/forum-php-embedded/src/web/php/form/registroConfirmado.php?IdEmail=$correo'>Verificar correo</a></button>
 		";
 		
 		/* SMTP parameters. */
@@ -57,10 +57,10 @@
 		);
 
 		/* SMTP authentication username. */
-		$mail->Username = 'MAIL WHICH SENDS THE EMAIL';
+		$mail->Username = 'MAIL WHICH SENDS THE EMAIL'; //! IMPORTANT
 
 		/* SMTP authentication password. */
-		$mail->Password = 'MAIL SENDER PASSWORD';
+		$mail->Password = 'MAIL SENDER PASSWORD'; //! IMPORTANT
 
 		/* Set the SMTP port. */
 		$mail->Port = 587;

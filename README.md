@@ -1,18 +1,47 @@
-# Personal-project-JS-PHP-Forum-2019-
-JS &amp; PHP forum.
+# Forum - PHP Embedded
 
-TravelEarth is a personal project which I started in 2019 and finished in 2020 before the pandemic.
-I developed TravelEarth in order to learn the bases of JavaScript, PHP and MySQL since at that moment I was learning the basics of HTML & CSS at school.
-As at the time my only goal was learning how JS, PHP & MySQL work together, I decided to make a PHP embed structure, knowing it's absolutely not the best way to create a website. Even though, I finished this project with a better view and idea of what PHP and JavaScript can do.
+"Travel Earth" is a simple project developed personally in 2019 with the objective of starting to learn PHP and the use of JQuery library.
 
-Concerning the project itself, TravelEarth is a countries forum which actually seeks to give the way to users to upload comments once somebody has visited a country.
-They can write their opinions or critiques.
-TravelEarth can be used without signing in, however, you have the capacity to log in creating your own user, thanks a register and login form.
-When you sign up, your user is saved in the database. Emphasize the user password get encrypted in order to keep the user security.
-Once every register check is passed, the website sends you an email to verify your mail.
-It's mandatory to push the button "verify", failing which you won't be able to sign in.
-Once you logged in, you can surf the whole website. You can solve your doubts by filling the doubts form, access to the continents sites and making new comments once you selected a country.
-Emphasize you can't create comments in case you are not logged.
-The website is responsive and has cheks in every form.
+## Model
 
-As it is just a personal project and I want to share it to you, I decided to remove the mail user and password I normally use to use PHP-Mailer. You are free to download the project and set it up with your own data.
+Since I was learning on my own, at that time, I thought it would be great the idea to develop the app in that way, using PHP embedded instead of an API REST using MVC, MySQLi instead of PDO and using SESSIONS instead of JWT.
+
+Even though, I think it helped me to understand the goal of the language and the fantastic idea of dynamically change the web retrieving data from the database.
+
+## Technologies
+
+- PHP + MySQLi
+- JQuery (JavaScript)
+- HTML + CSS (Responsive)
+
+## Features
+
+- General
+  - Logging system.
+  - Email system to confirm the email on sign-up.
+    - It's only available and functional on local and not on Internet since it's mandatory to set up the server to allow the send of emais.
+  - It retrieves posts from database and show them dynamically.
+  - You can filter posts by country.
+  - You can write posts just in case you've been logged in.
+  - Modern info panels to report errors, etc.
+
+## Libraries
+
+- PHPMailer- v6.2
+- JQuery - v3.6.0
+- Font Awesome
+
+## Setup
+
+- Create the database using the .sql file which is stored in the project.
+- Access to the path "./src/web/php/form/conexion.php" and set your custom database options.
+- Go to the path "./src/web/php/form/phpmailer.php" and set the email sender. \*\*IMPORTANT: That email which will send the data must allow the access of unknown applications (On Google Accounts).
+
+## Resources
+
+- All the project libraries (./src/web/lib/).
+- .sql file with the whole database structrure (./db/).
+
+## Authors
+
+Linkedin: [http://linkedin.com/in/ivan-torres-garcia](http://linkedin.com/in/ivan-torres-garcia)
